@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Quick start
+```bash
+$ git clone --depth=1 https://github.com/ytkg/react-typescript-tailwind-boilerplate.git <YOUR_PROJECT_NAME>
+$ cd <YOUR_PROJECT_NAME>
+$ yarn install
+$ yarn start
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
