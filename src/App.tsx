@@ -1,58 +1,19 @@
 import React from 'react';
-import { Routes, Route, Outlet, Link } from 'react-router-dom';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import About from './pages/About';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
+    <>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
       </Routes>
-    </div>
-  );
-}
-
-function Layout() {
-  return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-
-      <Outlet />
-    </header>
-  );
-}
-
-function Home() {
-  return (
-    <>
-      <main>
-        <h2>Welcome to the homepage!</h2>
-        <p>You can do this, I believe in you.</p>
-      </main>
-      <nav>
-        <Link className="App-link" to="/about">About</Link>
-      </nav>
-    </>
-  );
-}
-
-function About() {
-  return (
-    <>
-      <main>
-        <h2>Who are we?</h2>
-        <p>
-          That feels like an existential question, don't you
-          think?
-        </p>
-      </main>
-      <nav>
-        <Link className="App-link" to="/">Home</Link>
-      </nav>
+      <Footer />
     </>
   );
 }
