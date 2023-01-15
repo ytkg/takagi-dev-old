@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { MenuIcon } from '@heroicons/react/outline';
+import { Bars3Icon } from '@heroicons/react/24/outline';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +14,7 @@ function Navbar() {
       <nav className="flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono" role="navigation">
         <Link to="/" className="pl-8">takagi.dev</Link>
         <div className="px-8 cursor-pointer md:hidden" onClick={toggle}>
-          <MenuIcon className="h-6 w-6" />
+          <Bars3Icon className="h-6 w-6" />
         </div>
         <div className="pr-4 md:block hidden">
           <Link to="/" className="p-4">Home</Link>
