@@ -19,11 +19,13 @@ function Navbar() {
         <div className="pr-4 md:block hidden">
           <Link to="/" className="p-4">Home</Link>
           <Link to="/about" className="p-4">About</Link>
+          <Link to="/portfolio" className="p-4">Portfolio</Link>
         </div>
       </nav>
       <div className={ isOpen ? "relative grid grid-rows-2 text-center items-center bg-gray-800 text-white font-mono" : "hidden" } onClick={toggle}>
         <Link to="/" className="p-4">Home</Link>
         <Link to="/about" className="p-4">About</Link>
+        <Link to="/portfolio" className="p-4">Portfolio</Link>
       </div>
     </>
   );
